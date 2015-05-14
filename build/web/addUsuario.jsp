@@ -31,7 +31,7 @@
         
         <div id="corpo" align="center">
             <%
-            System.out.println("a");
+
             objUsuario obj = new objUsuario();
             
             obj.setUsuario(request.getParameter("usuario"));

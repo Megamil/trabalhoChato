@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bookstack.css" type="text/css">
 	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="scripts/login.js"></script>
 	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 </head>
 <body>
@@ -32,7 +33,15 @@
 			</div>
 		</div>
 	</nav>
-	<div class="row">
+     <div id="logar">
+        <form method="post" action="login.jsp">
+            <input type="text" name="usuario" placeholder="Usuário">
+            <input type="password" name="senha" placeholder="Senha">
+            <button type="submit" name="enviar">Entrar</button>
+        </form>
+    </div>
+    
+        <div class="row">
 		<div id="Logo"></div>
 	</div>
 	<div class="row text-center">

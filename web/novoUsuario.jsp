@@ -37,7 +37,7 @@
                     CPF:<input class="form-control" type="text" name="cpf">
                     <input class="btn btn-success" type="submit" value="Criar"> 
                 </fieldset>
-        </form>
+            </form>
         </div>
     </body>
 </html>
