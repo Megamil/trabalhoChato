@@ -1,0 +1,118 @@
+body {
+	font-family: sans-serif, Arial !important;
+}
+
+#Wrapper {
+	width: 768px;
+	margin: 0 auto;
+}
+
+#Logo {
+	height: 200px;
+	width: 768px;
+	background-image: url(images/logo_bookstack.png);
+}
+
+#Livros {
+	background-color: #FFFFFF;
+	padding-top: 15px;
+}
+
+#Livros .text-right {
+	padding: 0px;
+}
+
+#Livros .form-group {
+	margin-bottom: 5px !important;
+}
+
+.livro-imagem {
+	border: 3px solid black;
+	text-align: center;
+	width: 200px;
+	height: 300px;
+}
+
+.livro-imagem img{
+	width: 195px;
+	height: 295px;
+}
+
+.list-group-item.active a {
+	color: white;
+}
+
+.glyphicon {
+	margin-right: 5px;
+}
+
+.btn-default {
+	background-color: #3c8198;
+	color: white;
+}
+
+.btn-default:hover {
+	background-color: #20B2AA;
+	color: white;
+}
+
+.btn-default.active{
+	background-color: #cecece;
+	color: black;
+}
+
+.livro-item {
+	border-bottom: 2px solid #cecece;
+	padding-bottom: 5px;
+}
+
+.sinopse {
+	max-height: 120px;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+#UsuarioLogado {
+	width: 530px;
+}
+
+/* Classes genéricas */
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.padding0 {
+	padding: 0px;
+}
+
+.padding-right0 {
+	padding-right: 0px;
+}
+
+.padding-left0 {
+	padding-left: 0px;
+}
+
+.padding-left3 {
+	padding-left: 3px;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.margin-top10 {
+	margin-top: 10px;
+}

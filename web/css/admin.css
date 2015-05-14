@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif, Arial !important;
+}
+#corpo {
+    padding: 20px;
+    position:absolute;
+    top:10%;
+    left:35%;
+    box-shadow: 2px 2px 2px #000;
+}
+
+input, select{
+    margin: 10px;
+}
