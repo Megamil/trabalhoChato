@@ -1,5 +1,5 @@
 <%@page import="dao.objLivro"%>
-<%@page import="dao.Dao"%>
+<%@page import="dao.DaoLivros"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@
             obj.setCategoria(Integer.parseInt(request.getParameter("categoria")));
             
             Class.forName("com.mysql.jdbc.Driver");
-            Dao dao = new Dao();
+            DaoLivros dao = new DaoLivros();
             dao.inserirLivro(obj);
             out.print("<h1>Livro Cadastrado com Sucesso</h1> <br> <a type=\"button\" class=\"btn btn-success\" href=\"http://localhost:8080/Livraria/novoLivro.jsp\">Voltar</button>");
         %>

@@ -4,7 +4,7 @@
     Author     : Eduardo
 --%>
 <%@page import="dao.objUsuario"%>
-<%@page import="dao.Dao"%>
+<%@page import="dao.DaoUsuarios"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
         
         <div id="corpo" align="center">
             <%
-            
+            System.out.println("a");
             objUsuario obj = new objUsuario();
             
             obj.setUsuario(request.getParameter("usuario"));
@@ -39,7 +39,7 @@
             obj.setCpf(request.getParameter("cpf"));
             
             Class.forName("com.mysql.jdbc.Driver");
-            Dao dao = new Dao();
+            DaoUsuarios dao = new DaoUsuarios();
             dao.inserirUsuario(obj);
             out.print("<h1>Usuário Cadastrado com Sucesso</h1> <br> <a type=\"button\" class=\"btn btn-success\" href=\"http://localhost:8080/Livraria/novoUsuario.jsp\">Voltar</button>");
             
