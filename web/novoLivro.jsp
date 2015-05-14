@@ -21,9 +21,9 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Livros</a></li>
-              <li><a href="#">Usuários</a></li>
-              <li><a href="#">Pedidos</a></li>
-              <li><a href="#">Vendas</a></li>
+              <li><a href="http://localhost:8080/Livraria/novoUsuario.jsp">Usuários</a></li>
+              <li><a href="http://localhost:8080/Livraria/pedidos.jsp">Pedidos</a></li>
+              <li><a href="http://localhost:8080/Livraria/vendas.jsp">Vendas</a></li>
           </div>
         </div>
       </nav>
@@ -32,8 +32,7 @@
             <form action="addLivro.jsp" method="post">
                 <fieldset>
                     <legend>Novo Livro:</legend>
-                    Título:
-                    <input class="form-control" type="text" name="titulo">
+                    Título:<input class="form-control" type="text" name="titulo">
                     Autor:
                     <input class="form-control" type="text" name="autor">
                     ISBN:
@@ -56,7 +55,7 @@
 
                     </select><br>
 
-                    <input class="btn btn-success" type="submit" value="Gravar"> 
+                    <input class="btn btn-success" type="submit" value="Criar"> 
                 </fieldset>
         </form>
         </div>

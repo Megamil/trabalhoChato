@@ -18,9 +18,9 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Livros</a></li>
-              <li><a href="#">Usuários</a></li>
-              <li><a href="#">Pedidos</a></li>
-              <li><a href="#">Vendas</a></li>
+              <li><a href="http://localhost:8080/Livraria/novoUsuario.jsp">Usuários</a></li>
+              <li><a href="http://localhost:8080/Livraria/pedidos.jsp">Pedidos</a></li>
+              <li><a href="http://localhost:8080/Livraria/vendas.jsp">Vendas</a></li>
           </div>
         </div>
       </nav>
@@ -38,7 +38,7 @@
             Class.forName("com.mysql.jdbc.Driver");
             Dao dao = new Dao();
             dao.inserirLivro(obj);
-            out.print("<h1>Livro Cadastrado com Sucesso</h1>");
+            out.print("<h1>Livro Cadastrado com Sucesso</h1> <br> <a type=\"button\" class=\"btn btn-success\" href=\"http://localhost:8080/Livraria/novoLivro.jsp\">Voltar</button>");
         %>
         </div>
     </body>
