@@ -5,16 +5,11 @@
  */
 package dao;
 
-/**
- *
- * @author Eduardo
- */
-public class objUsuario {
+public class ObjLogin {
     
+    private int id;
     private String usuario;
     private String senha;
-    private String cpf;
-
     /**
      * @return the usuario
      */
@@ -44,17 +39,17 @@ public class objUsuario {
     }
 
     /**
-     * @return the cpf
+     * @return the id
      */
-    public String getCpf() {
-        return cpf;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param cpf the cpf to set
+     * @param id the id to set
      */
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setId(int id) {
+        this.id = id;
     }
     
 }

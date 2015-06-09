@@ -1,10 +1,10 @@
 $(document).ready(function(){
     
-    $("#logar").hide();
+    $("#logar").css('display','none');
     
     $("#UsuarioLogado").click(function(){
         
-       $("#logar").show(); 
+       $("#logar").slideToggle("fast");
         
     });
     

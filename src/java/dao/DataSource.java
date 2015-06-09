@@ -3,19 +3,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class connect {
+public class DataSource {
         
-    public static void main(String[] args) throws SQLException {
-       
-
-    }
 
     public Connection connect() {
         
         Connection con;
         
         String url, user, pass;
-        url = "jdbc:mysql://localhost:3306/bookstore";
+        url = "jdbc:mysql://localhost:8889/BOOKSTORE";
         user = "root";
         pass = "root";
                 

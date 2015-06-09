@@ -5,10 +5,14 @@ body {
     padding: 20px;
     position:absolute;
     top:10%;
-    left:35%;
+    left:15%;
     box-shadow: 2px 2px 2px #000;
 }
 
 input, select{
     margin: 10px;
+}
+
+td,th {
+    padding: 6px;
 }

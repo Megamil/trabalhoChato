@@ -1,63 +1,45 @@
-<%-- 
-    Document   : novoLivro
-    Created on : 14/05/2015, 11:35:32
-    Author     : Eduardo
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="css/admin.css" type="text/css">
-	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-        <title>Administrativo</title>
-    </head>
-    <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Livros</a></li>
-              <li><a href="http://localhost:8080/Livraria/novoUsuario.jsp">Usu√°rios</a></li>
-              <li><a href="http://localhost:8080/Livraria/pedidos.jsp">Pedidos</a></li>
-              <li><a href="http://localhost:8080/Livraria/vendas.jsp">Vendas</a></li>
-          </div>
-        </div>
-      </nav>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+        <c:import url="cabecalho.jsp"/>
         
-        <div id="corpo" align="center">
+        <div align="center">
             <form action="addLivro.jsp" method="post">
                 <fieldset>
                     <legend>Novo Livro:</legend>
-                    T√≠tulo:<input class="form-control" type="text" name="titulo">
-                    Autor:
-                    <input class="form-control" type="text" name="autor">
-                    ISBN:
-                    <input class="form-control" type="text" name="isbn">
-                    Sinopse:
-                    <input class="form-control" type="text" name="sinopse">
-                    Valor:
-                    <input class="form-control" type="text" name="valor">
-                    Categoria:
-                    <select class="form-control" name="categoria">
+                     <table>
                         
-                        <option value="">Selecione</option>
-                        <option value="1">Romance</option>
-                        <option value="2">Com√©dia</option>
-                        <option value="3">Drama</option>
-                        <option value="4">Infantil</option>
-                        <option value="5">Terror</option>
-                        <option value="6">Fic√ß√£o Cient√≠fica</option>
-                        <option value="7">Hist√≥ria Nacional</option>
+                        <tr>
+                            <td>TÌtulo:<input class="form-control" type="text" name="titulo"></td>
+                            <td>Autor: <input class="form-control" type="text" name="autor"></td>
+                            <td>ISBN:<input class="form-control" type="text" name="isbn"></td>
+                        </tr>
+ 
+                        <tr>
+                            <td>Sinopse:<input class="form-control" type="text" name="sinopse"></td>
+                            <td>Caminho da Imagem:<input class="form-control" type="text" name="caminho_imagem" value="css/images/"></td>
+                            <td>Valor:<input class="form-control" type="text" name="valor"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Categoria:<select class="form-control" name="categoria">
+                        
+                                <option value="">Selecione</option>
+                                <option value="1">Romance</option>
+                                <option value="2">ComÈdia</option>
+                                <option value="3">Drama</option>
+                                <option value="4">Infantil</option>
+                                <option value="5">Terror</option>
+                                <option value="6">FicÁ„o CientÌfica</option>
+                                <option value="7">HistÛria Nacional</option>
 
-                    </select><br>
+                            </select>
+                            </td>
+                        </tr>
+                        
+                    </table><br>
 
                     <input class="btn btn-success" type="submit" value="Criar"> 
                 </fieldset>
         </form>
         </div>
-    </body>
-</html>
+    <c:import url="footer.jsp"/>

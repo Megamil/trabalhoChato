@@ -1,43 +1,19 @@
-<%-- 
-    Document   : addUsuario
-    Created on : 14/05/2015, 13:59:57
-    Author     : Eduardo
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="css/admin.css" type="text/css">
-	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-        <title>Administrativo</title>
-    </head>
-    <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="http://localhost:8080/Livraria/novoLivro.jsp">Livros</a></li>
-              <li class="active"><a href="#">Usu√°rios</a></li>
-              <li><a href="http://localhost:8080/Livraria/pedidos.jsp">Pedidos</a></li>
-              <li><a href="http://localhost:8080/Livraria/vendas.jsp">Vendas</a></li>
-          </div>
-        </div>
-      </nav>
-        
-        <div id="corpo" align="center">
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+        <c:import url="cabecalho.jsp"/>
+                
+        <div align="center">
             <form action="addUsuario.jsp" method="post">
                 <fieldset>
-                    <legend>Novo Usu√°rio:</legend>
-                    Usu√°rio:<input class="form-control" type="text" name="usuario">
-                    Senha:<input class="form-control" type="password" name="senha">
-                    CPF:<input class="form-control" type="text" name="cpf">
-                    <input class="btn btn-success" type="submit" value="Criar"> 
+                    <legend>Novo Usu·rio:</legend>
+                    Usu·rio:
+                    <input class="form-control" type="text" name="usuario">
+                    Senha:
+                    <input class="form-control" type="password" name="senha">
+                    Confirme a Senha:
+                    <input class="form-control" type="password" name="senha2">
+                    <input class="btn btn-success" type="submit" value="Criar">
                 </fieldset>
             </form>
         </div>
-    </body>
-</html>
+    <c:import url="footer.jsp"/>

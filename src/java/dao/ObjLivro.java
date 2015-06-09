@@ -1,11 +1,13 @@
 package dao;
 
-public class objLivro {
+public class ObjLivro {
     
+    private int id;
     private String Titulo;
     private String Autor;
     private String ISBN;
     private String Sinopse;
+    private String Caminho_imagem;
     private double Valor;
     private int Categoria;
     
@@ -91,6 +93,34 @@ public class objLivro {
      */
     public void setCategoria(int Categoria) {
         this.Categoria = Categoria;
+    }
+
+    /**
+     * @return the Caminho_imagem
+     */
+    public String getCaminho_imagem() {
+        return Caminho_imagem;
+    }
+
+    /**
+     * @param Caminho_imagem the Caminho_imagem to set
+     */
+    public void setCaminho_imagem(String Caminho_imagem) {
+        this.Caminho_imagem = Caminho_imagem;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
                  
 }

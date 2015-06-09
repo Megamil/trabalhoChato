@@ -3,18 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/addLivro.jsp</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/css/admin.css</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/src/java/dao/objLivro.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/src/java/dao/objUsuario.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/admin.jsp</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/src/java/dao/connect.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/novoLivro.jsp</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/novoUsuario.jsp</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/src/java/dao/Dao.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/css/bookstack.css</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/index.jsp</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Livraria/web/addUsuario.jsp</file>
+            <file>file:/C:/Users/Eduardo/Desktop/Livraria%20ADM/Livraria/Livraria/web/drama.jsp</file>
+            <file>file:/C:/Users/Eduardo/Desktop/Livraria%20ADM/Livraria/Livraria/src/java/dao/DaoDetalhesDoPedido.java</file>
+            <file>file:/C:/Users/Eduardo/Desktop/Livraria%20ADM/Livraria/Livraria/web/detalhePedido.jsp</file>
         </group>
     </open-files>
 </project-private>

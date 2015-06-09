@@ -1,21 +1,21 @@
 <%@page import="java.util.ArrayList"%>
-<%@page import="dao.objUsuario"%>
-<%@page import="dao.DaoUsuarios"%>
+<%@page import="dao.ObjLogin"%>
+<%@page import="dao.DaoLogin"%>
 
 <%
-        objUsuario obj = new objUsuario();
+        ObjLogin obj = new ObjLogin();
 
         obj.setUsuario(request.getParameter("usuario"));
         obj.setSenha(request.getParameter("senha"));
 
         Class.forName("com.mysql.jdbc.Driver");
-        DaoUsuarios dao = new DaoUsuarios();
-        ArrayList<objUsuario> vet = dao.logar(obj.getUsuario(),obj.getSenha());
+        DaoLogin dao = new DaoLogin();
+        ArrayList<ObjLogin> vet = dao.logar(obj.getUsuario(),obj.getSenha());
         if (vet.size() > 0) {
   
-            response.sendRedirect("http://localhost:8080/Livraria/admin.jsp");
+            response.sendRedirect("admin.jsp");
 
         } else {
-            out.print("<h1>Acesso Negado</h1>");
+            out.print("<h1>Acesso Negado</h1> <a type=\"button\" class=\"btn btn-success\" href=\"index.jsp\">Voltar</a>");
         }
     %>
